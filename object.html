@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>javascript practic program</title>
+    </head>
+    <p id="demo">a</p>
+    <body>
+        <script>
+               const person = {
+                firstName : "Mohammad",
+                lastName : "Ali",
+                age : 21,
+                course : "B.tech",
+                branchName : "Computer Science",
+                fullName : function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+             console.log(person.fullName())
+            let test =document.getElementById("demo").innerHTML=person.age;
+             
+             
+        </script>
+    </body>
+</html>

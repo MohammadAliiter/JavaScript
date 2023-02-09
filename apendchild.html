@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> we are creating an element and textNode the apend both and also replace</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: centers;
+        }
+        #demo{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="demo">
+            <h1>the number one</h1>
+            <h3> the only one</h3>
+        </div>
+        <script>
+            let element = document.createElement("h1");
+            let text = document.createTextNode("My name is Khan");
+            element.appendChild(text);
+            var target = document.getElementById("demo");
+             var oldElement = target.children[0]
+             console.log(oldElement);
+             target.replaceChild(element,oldElement);
+             
+
+        </script>
+    </body>
+</html>

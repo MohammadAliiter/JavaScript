@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>setinterval</title>
+        <style>
+        #demo{
+            height: 100px;
+            width: 200px;
+            background-color: tomato;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="demo"></div>
+        <script>
+            var a = 0;
+       var id= setInterval(anim,500);
+            function anim(){
+            a=a+10
+            if(a==200){
+                clearInterval(id);
+            }
+            else{
+            var target = document.getElementById("demo");
+            target.style.marginLeft=a+'px';
+            }
+            }
+            /*  let a = 0;
+         var id=  setInterval(() => {
+            a=a+10;
+            if(a==200){
+                clearInterval(id)
+            }
+            else{
+            var target=document.getElementById("s");
+            target.style.marginLeft=a+'px';
+            }
+          }, 500);*/
+        </script>
+    </body>
+</html>

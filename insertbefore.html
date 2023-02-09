@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> insert before element in dom</title>
+    </head>
+    <body>
+        <div id="test">
+            <h1>hammad khan</h1>
+            <h1> Mohammad ali</h1>
+            <h1> mohammad hadi</h1>
+        </div>
+        <script>
+         var newelement = document.createElement("h1");
+         var text = document.createTextNode("Amir");
+         newelement.appendChild(text);
+         var target = document.getElementById("test");
+         target.insertBefore(newelement,target.childNodes[0])
+        </script>
+    </body>
+</html>

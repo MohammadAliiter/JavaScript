@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>settimeout</title>
+        <style>
+            #demo{
+                height: 100px;
+                width: 150px;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo"></div>
+        <script>
+           var id= setTimeout(abc,500);
+            function abc(){
+           var target =  document.getElementById("demo");
+            target.style.width="500px";
+            
+                      function stopanimation(){
+                clearTimeout(id)
+            }
+        }
+        </script>
+    </body>
+</html>

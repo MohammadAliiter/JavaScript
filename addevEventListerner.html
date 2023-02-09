@@ -1,0 +1,27 @@
+<html>
+    <head>
+<style>
+    #header{
+        height: 100px;
+        width: 50px;
+        background-color: black;
+    }
+
+</style>
+    </head>
+    <body>
+        <div id="header"> my name is khan</div>
+        <script>
+        /* document.getElementById("header").onmouseenter=abc;
+         function abc(){
+           document.getElementById("header").style.background="green"
+         }*/
+        document.getElementById("header").addEventListener("click",abc);
+        function abc(){
+            this.style.border="10px solid red";
+
+        }
+        
+        </script>
+    </body>
+</html>
