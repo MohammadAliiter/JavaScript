@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>cloneNode in dom javascript</title>
+    </head>
+    <body>
+        <ul id="list1">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Graps</li>
+            <li>Pineapple</li>
+        </ul>
+        <ul id="list2">
+            <li>Anar</li>
+            <li>Santra</li>
+            <li>Amrud</li>
+            <li>Litchi</li>
+
+        </ul>
+        <script>
+            var target = document.getElementById("list1").children[3];
+            var copyElement =target.cloneNode(true);
+            document.getElementById("list2").appendChild(copyElement)
+
+           // console.log(copyElement);
+          
+
+        </script>
+    </body>
+</html>
