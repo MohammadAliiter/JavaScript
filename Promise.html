@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>promise in advance javascript or ES6</title>
+    </head>
+    <body>
+        <script>
+            let prom =new Promise(function(resolve,rject){
+                if (true) {
+                    resolve("Here is Success");
+                }
+                else{
+                   rject("Here is Faliure"); 
+                }
+            });
+            let onfufilment=(result)=>{
+                console.log();
+            }
+            let onRejection=(error)=>{
+                console.log(error)
+            }
+            prom.then(onfufilment);
+            prom.catch(onRejection)
+        </script>
+    </body>
+</html>

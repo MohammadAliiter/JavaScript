@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>inheritance in javascript </title>
+    </head>
+    <body>
+        <script>
+            class employee{
+                constructor(name){
+                    console.log("constructor:Employee"+name);
+                 }
+            }
+            class manager extends employee{
+                super(name)
+                constructor(name){
+                    console.log("constructor:manager"+name);
+                }
+            }
+            let a=new manager("Mohammad Ali")
+        </script>
+    </body>
+</html>
