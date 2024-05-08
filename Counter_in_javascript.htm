@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Increment</title>
+</head>
+<body>
+      <h1 id="demo">0</h1>
+      <button onclick="Add()"> + </button>
+      <button onclick="minus()"> - </button>
+
+      <script>
+       var counter = 0;
+        function Add(){
+            counter++;
+        document.getElementById("demo").textContent = counter;
+        }
+
+        function minus(){
+            counter = counter - 1;
+         document.getElementById("demo").textContent = counter;
+        }
+      </script>
+</body>
+</html>
