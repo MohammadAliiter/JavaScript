@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script practice</title>
+</head>
+<body>
+    <script>
+     /*   var a = 5;
+        
+        for(let i = 1; i <= a; i++){
+            for(let j = 1; j <= a; j++){
+                if(j <= i){
+                    document.write(" *")
+                } else{
+                    document.write(" ")
+                }
+            } 
+            document.write("<br>")
+        } */
+
+        let arr = [1,2,3,4,5];
+     //   let result = arr.map((item, idx)=>(
+            
+       //    `  this is index ${idx} and the value is ${item*2}`
+       // ));
+
+  var result = "";
+              arr.forEach((number)=>{
+           //   console.log(number*2);
+            result += (number * 2);
+       })
+
+        document.write(result);
+    </script>
+</body>
+</html>
